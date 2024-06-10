@@ -1,0 +1,6 @@
+.lista-alternativas li {
+    list-style: upper-latin;
+}
+.lista-alternativas{
+    margin-bottom: 20px;
+}
