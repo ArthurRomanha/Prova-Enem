@@ -1,6 +1,26 @@
+body {
+    background-color: #373737;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
 .lista-alternativas li {
     list-style: upper-latin;
 }
-.lista-alternativas{
+
+.lista-alternativas {
     margin-bottom: 20px;
 }
