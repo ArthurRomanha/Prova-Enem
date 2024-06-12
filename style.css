@@ -19,11 +19,13 @@ nav a {
 nav a:hover {
     background-color: #555;
 }
-
-.lista-alternativas li {
+section{
+    margin-left: 15%;
+}
+.opcoes li {
     list-style: upper-latin;
 }
 
-.lista-alternativas {
+.opcoes {
     margin-bottom: 20px;
 }
