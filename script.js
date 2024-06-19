@@ -1,16 +1,19 @@
-let gabarito = ["1A", "2C"];
+let gabarito = ["1A", "2C", "3A", "4A", "5A", "6A", "7B", "8A", "9A", "10A"];
 let minhasRespostas = [];
 
-function corrigirProva(){
+document.addEventListener('submit', function(event){
+    event.preventDefault();
     for(let i = 0; i<10; i++){
-        let minhaRespostaVez = 0;
-        minhaRespostaVez = document.querySelector(`input[name="opcoes${i+1}"]:checked`);
+    let minhaRespostaVez = document.querySelector(`input[name="opcoes${i+1}"]:checked`);
         minhasRespostas.push(minhaRespostaVez.value);
+        
+        let idLabelDaVez =`label${minhaRespostaVez.id}`;
+        let labelOpcaoSelecionadaDaVez = document.getElementById(idLabelDaVez);
         if(minhasRespostas[i] === gabarito[i]){
-            console.log("você acertow");
+            labelOpcaoSelecionadaDaVez.style.backgroundColor = "green";
         }else{
-            console.log("errou");
+            labelOpcaoSelecionadaDaVez.style.backgroundColor = "red";
         }
     }
     console.log(minhasRespostas);
-}
+});
