@@ -5,7 +5,7 @@ let btnEnviar = document.getElementById("btnEnviar");
 document.addEventListener('submit', function(event){
     event.preventDefault();
     btnEnviar.style.display = "none";
-    for(let i = 0; i<10; i++){
+    for(let i = 0; i<gabarito.length; i++){
     let minhaRespostaVez = document.querySelector(`input[name="opcoes${i+1}"]:checked`);
         minhasRespostas.push(minhaRespostaVez.value);
         
@@ -17,5 +17,4 @@ document.addEventListener('submit', function(event){
             labelOpcaoSelecionadaDaVez.style.backgroundColor = "red";
         }
     }
-    console.log(minhasRespostas);
 });
