@@ -22,6 +22,11 @@ nav a:hover {
 section{
     margin-left: 15%;
 }
+details{
+    visibility: hidden;
+    position: absolute;
+    margin-left: 25%;
+}
 .opcoes li {
     list-style: upper-latin;
 }

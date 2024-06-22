@@ -9,6 +9,9 @@ document.addEventListener('submit', function(event){
     let minhaRespostaVez = document.querySelector(`input[name="opcoes${i+1}"]:checked`);
         minhasRespostas.push(minhaRespostaVez.value);
         
+    let detailsVez = document.getElementById(`explicacao${i+1}`);
+    detailsVez.style.visibility = "visible"
+        
         let idLabelDaVez =`label${minhaRespostaVez.id}`;
         let labelOpcaoSelecionadaDaVez = document.getElementById(idLabelDaVez);
         if(minhasRespostas[i] === gabarito[i]){
